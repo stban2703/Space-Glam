@@ -1,0 +1,22 @@
+.button {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 345px;
+
+    p {
+        font-family: $poppinsFont;
+        font-weight: $semibold;
+        font-size: $fontSizeHeader;
+    }
+
+    &--yellow {
+        background-color: $yellow;
+
+        p {
+            color: $purple;
+        }
+    }
+}
