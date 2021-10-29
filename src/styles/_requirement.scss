@@ -6,7 +6,6 @@
 
     &__number {
         width: 200px;
-
         img {
             width: 100%;
             max-width: none;
@@ -25,15 +24,18 @@
     }
 }
 
+@media (max-width: 991px) {
+    .requirement {
+        &__number {
+            width: 100px;
+        }
+    }
+}
+
 @media (max-width: 430px) {
     .requirement {
         &__number {
-            width: 150px;
-    
-            img {
-                width: 100%;
-                max-width: none;
-            }
+            width: 100px;
         }
 
         &__text {

@@ -48,7 +48,7 @@
         background-position: 70%;
 
         &__title {
-            font-size: $fontSizeExpertTitle - 0.5;
+            font-size: $fontSizeExpertTitle - 0.8;
         }
 
         &__text {
@@ -56,6 +56,14 @@
             font-size: $fontSizeExpertText - 0.5;
             color: white;
             margin: 20px 0;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .expertBanner {
+        .button {
+           max-width: none !important;
         }
     }
 }

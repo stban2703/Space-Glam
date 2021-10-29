@@ -39,3 +39,19 @@
         flex-wrap: wrap;
     }
 }
+
+@media (max-width: 525px) {
+    .section {
+        &__title {
+            font-size: $fontSizeTitle - 1.2;
+        }
+
+        &__benefits {
+            margin-top: 20px;
+        }
+
+        &__requirements {
+            margin-top: 20px;
+        }
+    }
+}

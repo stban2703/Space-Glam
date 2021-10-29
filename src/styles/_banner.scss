@@ -81,29 +81,23 @@
 
 @media (max-width: 1020px) {
     .banner {
-        height: fit-content;
-
         &__container {
             flex-wrap: wrap;
             flex-wrap: wrap-reverse;
             justify-content: center;
             background-position-y: top;
-            background-position-x: center;
-            background-size: 70%;
+            background-position-x: right;
+            background-size: contain;
             padding-bottom: 40px;
-        }
-
-        &__image {
-            padding: 30px 20px;
-        }
-
-        &__info {
-            align-items: center;
         }
 
         &__title {
             font-size: $fontSizeTitle - 0.5;
             line-height: 1.2;
+        }
+
+        &__image {
+            padding: 30px 20px;
         }
 
         &__text {
@@ -114,10 +108,39 @@
     }
 }
 
+@media (max-width: 999px) {
+    .banner {
+        height: fit-content;
+        &__container {
+            background-size: 500px;
+            background-position-x: center;
+        }
+        &__title {
+            font-size: $fontSizeTitle - 0.5;
+            line-height: 1.2;
+        }
+        
+        .button {
+            max-width: none !important;
+        }
+    }
+}
+
 @media (max-width: 525px) {
     .banner {
+        &__container {
+            background-size: 420px;
+        }
         &__title {
             font-size: $fontSizeTitle - 1.2;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .banner {
+        &__container {
+            background-size: 330px;
         }
     }
 }
