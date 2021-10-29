@@ -929,8 +929,6 @@ input[type=button] {
 
 .footerBanner__transition img {
   width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 @media (max-width: 1160px) {
@@ -1209,6 +1207,8 @@ input[type=button] {
   padding: 10px 20px;
   width: 100%;
   max-width: 345px;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
 }
 
 .button p {
@@ -1223,6 +1223,16 @@ input[type=button] {
 
 .button--yellow p {
   color: #8569D7;
+}
+
+.button:hover {
+  background-color: #8569D7;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.button:hover p {
+  color: #F8DC71;
 }
 
 /*@media (max-width: 1000px) {

@@ -5,6 +5,7 @@
     padding: 10px 20px;
     width: 100%;
     max-width: 345px;
+    transition: all ease-in 0.2s;
 
     p {
         font-family: $poppinsFont;
@@ -18,6 +19,15 @@
         p {
             color: $purple;
         }
+    }
+
+    &:hover {
+        background-color: $purple;
+        p {
+            color: $yellow;
+        }
+
+        transition: all ease-in 0.2s;
     }
 }
 
