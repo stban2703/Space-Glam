@@ -30,3 +30,33 @@
         }
     }
 }
+
+@media (max-width: 560px) {
+    .copyRight {
+        &__container {
+            img {
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .copyRight {
+        &__container {
+            img {
+                max-width: 175px;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .copyRight {
+        &__container {
+            img {
+                max-width: 130px;
+            }
+        }
+    }
+}

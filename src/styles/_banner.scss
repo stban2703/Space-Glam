@@ -113,3 +113,11 @@
         }
     }
 }
+
+@media (max-width: 525px) {
+    .banner {
+        &__title {
+            font-size: $fontSizeTitle - 1.2;
+        }
+    }
+}

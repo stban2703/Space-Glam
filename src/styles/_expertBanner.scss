@@ -47,11 +47,25 @@
     .expertBanner {
         background-position: 70%;
 
+        &__title {
+            font-size: $fontSizeExpertTitle - 0.5;
+        }
+
         &__text {
             font-family: $poppinsFont;
             font-size: $fontSizeExpertText - 0.5;
             color: white;
             margin: 20px 0;
+        }
+    }
+}
+
+@media (max-width: 328px) {
+    .expertBanner {
+        .button {
+            p {
+                font-size: 1.2rem !important;
+            }
         }
     }
 }

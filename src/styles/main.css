@@ -447,6 +447,12 @@ input[type=button] {
   }
 }
 
+@media (max-width: 525px) {
+  .banner__title {
+    font-size: 1.8rem;
+  }
+}
+
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,7 +539,7 @@ input[type=button] {
           align-items: center;
   padding-top: 30px;
   width: 351px;
-  height: 298px;
+  height: 300px;
   margin: 0 10px;
   margin-top: 20px;
 }
@@ -579,6 +585,7 @@ input[type=button] {
       -ms-flex-pack: center;
           justify-content: center;
   width: 300px;
+  padding: 0 5px;
 }
 
 .benefit__title {
@@ -595,6 +602,20 @@ input[type=button] {
   font-size: 0.875rem;
   font-weight: 300;
   color: #4F4F4F;
+}
+
+@media (max-width: 380px) {
+  .benefit {
+    width: 100%;
+  }
+  .benefit__icon {
+    width: 50px;
+    height: 50px;
+  }
+  .benefit__info {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
 .requirement {
@@ -628,6 +649,20 @@ input[type=button] {
   width: 100%;
   max-width: 256px;
   margin-left: 20px;
+}
+
+@media (max-width: 430px) {
+  .requirement__number {
+    width: 150px;
+  }
+  .requirement__number img {
+    width: 100%;
+    max-width: none;
+  }
+  .requirement__text {
+    margin-left: 15px;
+    max-width: none;
+  }
 }
 
 .expertBanner {
@@ -697,11 +732,20 @@ input[type=button] {
   .expertBanner {
     background-position: 70%;
   }
+  .expertBanner__title {
+    font-size: 2rem;
+  }
   .expertBanner__text {
     font-family: "Poppins", sans-serif;
     font-size: 1.375rem;
     color: white;
     margin: 20px 0;
+  }
+}
+
+@media (max-width: 328px) {
+  .expertBanner .button p {
+    font-size: 1.2rem !important;
   }
 }
 
@@ -854,6 +898,13 @@ input[type=button] {
   }
 }
 
+@media (max-width: 525px) {
+  .footerBanner__title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+}
+
 .footer {
   background-color: #2A2850;
   width: 100%;
@@ -895,6 +946,7 @@ input[type=button] {
 .siteMap__title {
   width: 100%;
   max-width: 250px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -920,10 +972,15 @@ input[type=button] {
           justify-content: space-between;
 }
 
+.siteMap__content--responsive {
+  display: none;
+}
+
 .siteMap__column {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding-right: 20px;
 }
 
 .siteMap__column p {
@@ -943,6 +1000,45 @@ input[type=button] {
 .siteMap__networks img {
   max-width: none;
   margin-right: 15px;
+}
+
+@media (max-width: 638px) {
+  .siteMap__content--normal {
+    display: none;
+  }
+  .siteMap__content--responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 455px) {
+  .siteMap__title {
+    width: 100%;
+    max-width: none;
+  }
+  .siteMap__content--normal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .siteMap__content--responsive {
+    display: none;
+  }
+  .siteMap__column {
+    padding-right: 10px;
+  }
 }
 
 .copyRight {
@@ -993,6 +1089,24 @@ input[type=button] {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+@media (max-width: 560px) {
+  .copyRight__container img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 560px) {
+  .copyRight__container img {
+    max-width: 175px;
+  }
+}
+
+@media (max-width: 360px) {
+  .copyRight__container img {
+    max-width: 130px;
+  }
 }
 
 .button {
