@@ -15,11 +15,18 @@
         align-items: center;
         justify-content: space-between;
 
+        img {
+            width: 100%;
+            max-width: 340px;
+        }
+
         p {
             font-family: $poppinsFont;
             font-size: $fontSizeCopyRight;
             font-weight: $light;
             color: $darkBlue;
+            white-space: nowrap;
+            width: fit-content;
         }
     }
 }

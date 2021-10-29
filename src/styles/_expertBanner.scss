@@ -42,3 +42,16 @@
         margin: 20px 0;
     }
 }
+
+@media (max-width: 1020px) {
+    .expertBanner {
+        background-position: 70%;
+
+        &__text {
+            font-family: $poppinsFont;
+            font-size: $fontSizeExpertText - 0.5;
+            color: white;
+            margin: 20px 0;
+        }
+    }
+}
